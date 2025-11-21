@@ -27,7 +27,30 @@ export default function Websites() {
           </section>
 
 
+                 <section className='project card'>
+            <div className="featured-image">
+              <img src="/images/clearfeed.png" alt="Clearfeed" />
+            </div>
+            <p className="mono-text"><span className="bold">Brand:</span> Clearfeed</p>
+            <p className="mono-text"><span className="bold">Description:</span> Open‑source, totally private RSS feed reader desktop app</p>
+            <p className="mono-text"><span className="bold">Work:</span> Design, prototyping and development of the app</p>
+          </section>
+
+
+    
+   
+
           <section className='project card'>
+            <div className="featured-image">
+              <img src="/images/quantumkeep.png" alt="QuantumKeep" />
+            </div>
+            <p className="mono-text"><span className="bold">Brand:</span> QuantumKeep</p>
+            <p className="mono-text"><span className="bold">Description:</span>Quantum enhanced file encryption web app</p>
+            <p className="mono-text"><span className="bold">Work:</span> Design, prototyping and development of the website</p>
+          </section>
+
+
+      <section className='project card'>
             <div className="featured-image">
               <img src="/images/creationbase.png" alt="Creationbase" />
             </div>
@@ -36,23 +59,7 @@ export default function Websites() {
             <p className="mono-text"><span className="bold">Work:</span> Design, prototyping and development of the website</p>
           </section>
 
-          <section className='project card'>
-            <div className="featured-image">
-              <img src="/images/clearfeed.jpg" alt="Clearfeed" />
-            </div>
-            <p className="mono-text"><span className="bold">Brand:</span> Clearfeed</p>
-            <p className="mono-text"><span className="bold">Description:</span> Open‑source, totally private RSS feed reader</p>
-            <p className="mono-text"><span className="bold">Work:</span> Design, prototyping and development of the website</p>
-          </section>
 
-          <section className='project card'>
-            <div className="featured-image">
-              <img src="/images/quantumkeep2.png" alt="QuantumKeep" />
-            </div>
-            <p className="mono-text"><span className="bold">Brand:</span> QuantumKeep</p>
-            <p className="mono-text"><span className="bold">Description:</span>Quantum enhanced file encryption web app</p>
-            <p className="mono-text"><span className="bold">Work:</span> Design, prototyping and development of the website</p>
-          </section>
 
           <section className='project card'>
             <div className="featured-image">
@@ -63,14 +70,7 @@ export default function Websites() {
             <p className="mono-text"><span className="bold">Work:</span> Design, prototyping and development of the website</p>
           </section>
 
-          <section className='project card'>
-            <div className="featured-image">
-              <img src="/images/habitat.png" alt="Habitat lab" />
-            </div>
-            <p className="mono-text"><span className="bold">Brand:</span> Habitat</p>
-            <p className="mono-text"><span className="bold">Description:</span>Property management website</p>
-            <p className="mono-text"><span className="bold">Work:</span> Design, prototyping and development of the website</p>
-          </section>
+    
         </div>
       </div>
       <Footer />
