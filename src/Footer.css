@@ -1,0 +1,15 @@
+.site-footer {
+  background-color: #000;
+  color: #8c8c8c;
+  border-top: 1px solid #1a1a1a;
+  min-height: 0;
+  flex-shrink: 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  text-align: center;
+  font-size: 12px;
+}

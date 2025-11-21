@@ -1,0 +1,112 @@
+.contact-section {
+  width: 100%;
+  padding-bottom: 40px;
+}
+
+.homepage.contact-page {
+  min-height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage.contact-page .homepage-container {
+  flex: 1;
+  max-width: 1200px !important;
+  width: 100% !important;
+}
+
+.homepage.contact-page footer {
+  min-height: auto;
+  height: auto;
+}
+
+.contact-content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.contact-input {
+  width: 100%;
+  padding: 10px 12px;
+  color: #c7c7c7;
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-radius: 8px;
+  caret-color: #ff0000;
+}
+
+.contact-input::placeholder {
+  font-family: Geist mono, monospace;
+}
+
+.contact-input:focus {
+  outline: none;
+  border-color: #ff0000;
+  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.16);
+}
+
+.contact-input::selection {
+  background: rgba(255, 0, 0, 0.25);
+  color: #ffffff;
+}
+
+.submit-button {
+  justify-self: start;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-family: Geist mono, monospace;
+  color: #c7c7c7;
+  background: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 180ms ease, border-color 180ms ease;
+}
+
+.submit-button:hover {
+  background-color: #111111;
+  border-color: #333333;
+}
+
+.loading-spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255,255,255,0.25);
+  border-top-color: #c7c7c7;
+  border-radius: 50%;
+  animation: spin 800ms linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.status-message {
+  font-size: 12px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #1a1a1a;
+}
+
+.contact-content .project-link {
+  color: #ff0000;
+}
+
+.contact-content .mono-text {
+  padding: 8px 0;
+  margin: 8px 0;
+}
+
+.status-message.success { color: #9fe29f; }
+.status-message.error { color: #ff8080; }

@@ -1,0 +1,141 @@
+.biography {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.bio-hero {
+  max-width: 1100px;
+  margin: 0 auto;
+ 
+}
+
+.bio-hero-text {
+  margin-top: 20px;
+}
+
+.bio-hero-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.bio-hero-images img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.bio-hero-image img {
+  width: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.bio-title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+}
+
+.bio-section-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 40px;
+    margin-top: 80px;
+
+}
+
+.bio-text {
+  font-size: 14px;
+  color: #9c9c9c;
+  margin-bottom: 16px;
+}
+
+.project {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.featured-image {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.featured-image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+}
+
+.publications-grid {
+  width: 100%;
+  margin: 0 auto;
+  columns: 3 320px;
+  column-gap: 16px;
+}
+
+.publications-grid .project.card {
+  break-inside: avoid;
+  margin-bottom: 16px;
+  max-width: 100%;
+  padding: 12px;
+  background-color: #0a0a0a;
+  border: 1px solid #1a1a1a;
+  border-radius: 8px;
+}
+
+.publications-grid .featured-image {
+  grid-template-columns: 1fr;
+}
+
+.publications-grid .featured-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  justify-self: stretch;
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  .publications-grid {
+    columns: 2 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .publications-grid {
+    columns: 1 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .bio-hero-images {
+    grid-template-columns: 1fr;
+  }
+  .bio-title {
+    font-size: 28px;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}

@@ -1,0 +1,44 @@
+.sites-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.sites-grid .project {
+  margin: 0;
+}
+
+.sites-grid .featured-image {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.sites-grid .featured-image img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mono-text {
+  padding: 0 12px 12px 12px;
+  font-size: 12px;
+  color: #9c9c9c;
+}
+
+.sites-desc {
+  font-size: 14px;
+  color: #9c9c9c;
+  margin-bottom: 24px;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* No responsive column changes needed; cards are full width */
