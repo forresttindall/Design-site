@@ -18,7 +18,7 @@ export default function Biography() {
             <h1 className="bio-title">Biography</h1>
             <div className="bio-hero-images">
               <img src="/images/IMG_2273-2.jpg" alt="Biography photo" />
-              <img src="/images/littleme.jpg" alt="Portrait" />
+              
             </div>
             <p className="bio-text">J. F. Tindall is a Fullstack Creative from Boise, Idaho, raised in the wide landscapes of the American West. His work spans photography, design, art, and web development, blending technical precision with visual storytelling.</p>
             <p className="bio-text">He began making art early, first through drawing and writing, then discovering film photography at thirteen.</p>
