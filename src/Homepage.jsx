@@ -6,6 +6,7 @@ import './Homepage.css'
 export default function Homepage() {
   const [typed, setTyped] = useState('')
   const fullText = 'Fullstack Creative'
+  const [parallax, setParallax] = useState(0)
 
   useEffect(() => {
     let i = 0
@@ -29,6 +30,15 @@ export default function Homepage() {
     return () => { active = false }
   }, [])
 
+  useEffect(() => {
+    const onScroll = () => {
+      const y = window.scrollY || 0
+      setParallax(y * 0.25)
+    }
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
   return (
     <div className="homepage">
       <Nav />
@@ -36,15 +46,15 @@ export default function Homepage() {
 
         
         <section className="hero">
-          <div className="hero-left">
+          <div className="hero-left" style={{ transform: `translateY(${parallax * 0.25}px)` }}>
             <h1 className="name">Forrest Tindall</h1>
             <div className="sub">{typed}<span className="caret" /></div>
             <button className="cta-btn" type="button">Contact Me</button>
           </div>
           <div className="hero-right">
-            <img src="/images/hero-photo.jpg" alt="Hero" className="hero-img" />
+            <img src="/images/hero-photo.jpg" alt="Hero" className="hero-img" style={{ transform: `translateY(${parallax}px)` }} />
           </div>
-          <a href="/contact" className="cta-btn cta-btn-mobile">Contact</a>
+          <a href="/contact" className="cta-btn cta-btn-mobile" style={{ transform: `translateY(${parallax * 0.25}px)` }}>Contact</a>
         </section>
 
         <section className="grid">
