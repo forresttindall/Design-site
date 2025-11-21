@@ -24,10 +24,6 @@
   "engines": {
     "node": "20.x",
     "bun": ">=1.1.0"
-  },
-  "dependencies": {
-  "@emailjs/browser": "^3.x.x",
-  ...
+  }
 }
 
-}
