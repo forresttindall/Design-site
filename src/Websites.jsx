@@ -16,6 +16,17 @@ export default function Websites() {
         <p className="sites-desc">Web design and development focused on clean visuals, fast performance, and maintainable code. Responsive layouts, accessible UI, and modern tooling to ship quickly and scale.</p>
 
         <div className="sites-grid">
+
+                 <section className='project card'>
+            <div className="featured-image">
+              <img src="/images/amore.png" alt="Amore" />
+            </div>
+            <p className="mono-text"><span className="bold">Brand:</span> Amore</p>
+            <p className="mono-text"><span className="bold">Description:</span> Boise Restaurant</p>
+            <p className="mono-text"><span className="bold">Work:</span> Design, prototyping and development of the website</p>
+          </section>
+
+
           <section className='project card'>
             <div className="featured-image">
               <img src="/images/creationbase.png" alt="Creationbase" />
