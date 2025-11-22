@@ -42,10 +42,10 @@ export default function Websites() {
 
           <section className='project card'>
             <div className="featured-image">
-              <img src="/images/quantumkeep.png" alt="QuantumKeep" />
+              <img src="/images/fastburger.png" alt="QuantumKeep" />
             </div>
-            <p className="mono-text"><span className="bold">Brand:</span> QuantumKeep</p>
-            <p className="mono-text"><span className="bold">Description:</span>Quantum enhanced file encryption web app</p>
+            <p className="mono-text"><span className="bold">Brand:</span> Fastburger</p>
+            <p className="mono-text"><span className="bold">Description:</span> Burger Restaurant</p>
             <p className="mono-text"><span className="bold">Work:</span> Design, prototyping and development of the website</p>
           </section>
 
