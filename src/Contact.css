@@ -57,8 +57,8 @@
 
 .contact-input:focus {
   outline: none;
-  border-color: #ff0000;
-  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.16);
+  border-color: #ffffff;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.16);
 }
 
 .contact-input::selection {
@@ -106,7 +106,10 @@
 }
 
 .contact-content .project-link {
-  color: #ff0000;
+  color: #ffffff;
+}
+.contact-content .project-link:hover {
+  color: #ffffff;
 }
 
 .contact-content .mono-text {
