@@ -17,7 +17,7 @@ export default function Biography() {
           <div className="bio-hero-text">
             <h1 className="bio-title">Biography</h1>
             <div className="bio-hero-images">
-              <img src="/images/IMG_2273-2.jpg" alt="Biography photo" />
+              <img src="/images/hero-photo.jpg" alt="Biography photo" />
               
             </div>
             <p className="bio-text">Forrest Tindall is a Fullstack Creative from Boise, Idaho, raised in the wide landscapes of the American West. His work spans photography, design, art, and web development, blending technical precision with visual storytelling.</p>

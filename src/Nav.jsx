@@ -9,7 +9,7 @@ export default function Nav() {
       <div className="nav-container">
         <div className="nav-left">
           <a href="/" aria-label="Home">
-            <img src="/images/logo.png" alt="Logo" className="logo" />
+            <img src="/images/fttypelogo.png" alt="Logo" className="logo" />
           </a>
         </div>
         <div className="nav-right">
