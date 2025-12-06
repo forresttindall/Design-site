@@ -2,11 +2,13 @@
   width: 100%;
   columns: 2 320px;
   column-gap: 16px;
+  margin-bottom: 80px;
 }
 
 .gd-grid .project {
   break-inside: avoid;
   margin-bottom: 16px;
+  padding: 10px;
 }
 
 .gd-grid .featured-image {
@@ -20,6 +22,7 @@
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 16px;
 }
 
 .mono-text {
@@ -39,7 +42,9 @@
 }
 
 @media (max-width: 768px) {
-  .gd-grid { columns: 1 100%; }
+  .gd-grid { columns: 1 100%; column-gap: 12px; margin-bottom: 60px; }
+  .gd-grid .project { margin-bottom: 12px; }
+  .name { font-size: 28px; }
 }
 
 .name {
@@ -47,4 +52,8 @@
   font-weight: 700;
   margin-bottom: 40px;
   margin-top: 20px;
+}
+
+.project {
+  padding: 16px;
 }

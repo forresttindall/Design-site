@@ -4,6 +4,16 @@
   gap: 0;
 }
 
+.biography-pane {
+  padding-top: 80px;
+  padding-bottom: 10px;
+}
+
+.biography-page .homepage-container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .bio-hero {
   width: 100%;
   margin: 0;
@@ -24,7 +34,8 @@
   aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
-  border-radius: 8px;
+  border-radius: 32px;
+  border: 1px solid rgba(255,255,255,0.12);
   margin-bottom: 40px;
   margin-top: 40px;
 }
@@ -34,7 +45,8 @@
   aspect-ratio: 1 / 1;
   object-fit: cover;
   display: block;
-  border-radius: 8px;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.12);
   margin-bottom: 40px;
   margin-top: 40px;
 }
@@ -99,7 +111,7 @@
   padding: 12px;
   background-color: #0a0a0a;
   border: 1px solid #1a1a1a;
-  border-radius: 8px;
+  border-radius: 26px;
 }
 
 .publications-grid .featured-image {
@@ -113,6 +125,7 @@
   object-fit: contain;
   justify-self: stretch;
   display: block;
+  border-radius: 16px;
 }
 
 @media (max-width: 1200px) {

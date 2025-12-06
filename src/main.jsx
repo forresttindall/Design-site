@@ -7,6 +7,7 @@ import Websites from './Websites'
 import Contact from './Contact'
 import Photography from './Photography'
 import Testimonials from './Testimonials'
+import CaseStudies from './CaseStudies'
 
 const path = window.location.pathname
 let Root
@@ -22,6 +23,8 @@ if (path === '/biography') {
   Root = <Photography />
 } else if (path === '/testimonials') {
   Root = <Testimonials />
+} else if (path === '/casestudies') {
+  Root = <CaseStudies />
 } else {
   Root = <Homepage />
 }

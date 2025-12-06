@@ -1,4 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
+import emailjs from '@emailjs/browser'
+import { blastConfetti } from './confetti'
 import Nav from './Nav'
 import Footer from './Footer.jsx'
 import Testimonials from './Testimonials.jsx'
@@ -6,15 +8,16 @@ import './Homepage.css'
 
 export default function Homepage() {
   const [typed, setTyped] = useState('')
-  const [parallax, setParallax] = useState(0)
-  const [fade, setFade] = useState(0)
+  
   const [loaded, setLoaded] = useState(false)
   const [ctaVisible, setCtaVisible] = useState(false)
   const ctaRef = useRef(null)
+  const formRef = useRef(null)
+  const [formStatus, setFormStatus] = useState({ isSubmitting: false })
 
   
   useEffect(() => {
-    const fullText = 'Design | Development | Strategy'
+    const fullText = 'Your Creation Studio'
     let i = 0
     let active = true
     const type = () => {
@@ -40,16 +43,7 @@ export default function Homepage() {
     setLoaded(true)
   }, [])
 
-  useEffect(() => {
-    const onScroll = () => {
-      const y = window.scrollY || 0
-      setParallax(-y * 0.25)
-      const f = Math.max(0, Math.min(y / 400, 1))
-      setFade(f)
-    }
-    window.addEventListener('scroll', onScroll, { passive: true })
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [])
+  
 
   useEffect(() => {
     const el = ctaRef.current
@@ -68,45 +62,62 @@ export default function Homepage() {
     return () => obs.disconnect()
   }, [])
 
+  const sendEmail = (e) => {
+    e.preventDefault()
+    setFormStatus({ isSubmitting: true })
+    emailjs.init('pZtlnSO7NHel0tpbW')
+    emailjs
+      .sendForm('service_txe96pq', 'template_l2zhyqf', formRef.current, { publicKey: 'pZtlnSO7NHel0tpbW' })
+      .then(
+        () => {
+          setFormStatus({ isSubmitting: false })
+          if (formRef.current) formRef.current.reset()
+          blastConfetti()
+        },
+        () => {
+          setFormStatus({ isSubmitting: false })
+          blastConfetti()
+        }
+      )
+  }
+
   return (
-    <div className="homepage">
-      <Nav />
+    <div className="homepage homepage-no-offset">
+      <div className="home-pane">
+        <Nav />
+        <div className="home-pane-content">
+          <section className={`hero ${loaded ? 'hero-loaded' : ''}`}>
+              <h1 className="name">Branding and web design built to be seen.</h1>
+              <div className="sub">{typed}<span className="caret" /></div>
+          </section>
+
+          <section className="grid">
+            <a href="/graphicdesign" className="card-link">
+              <div className="card">
+                <img src="/images/paradoxlabscard.jpg" alt="Logo Design" className="card-img" />
+                <div className="label">Logo Design</div>
+                <p className="desc">Distinctive marks and identity systems that stand out and scale across mediums.</p>
+              </div>
+            </a>
+            <a href="/graphicdesign" className="card-link">
+              <div className="card">
+                <img src="/images/analog square.png" alt="Graphic Design" className="card-img" />
+                <div className="label">Graphic Design</div>
+                <p className="desc">Posters, layouts, and digital assets crafted for clarity, impact, and polish.</p>
+              </div>
+            </a>
+            <a href="/graphicdesign" className="card-link">
+              <div className="card">
+                <img src="/images/OPEN NETIZEN.jpg" alt="Branding" className="card-img" />
+                <div className="label">Branding</div>
+                <p className="desc">Strategy, tone, and a cohesive visual system that tells a consistent story.</p>
+              </div>
+            </a>
+          </section>
+        </div>
+      </div>
+
       <div className="homepage-container">
-
-        
-        <section className={`hero ${loaded ? 'hero-loaded' : ''}`}>
-            <h1 className="name">Design and Development for bold businesses.</h1>
-            <div className="sub">{typed}<span className="caret" /></div>
-            <div className="hero-fade" style={{ opacity: fade }} />
-          
-        </section>
-
-
-        <section className="grid">
-          <a href="/graphicdesign" className="card-link">
-            <div className="card">
-              <img src="/images/paradoxlabs.jpg" alt="Logo Design" className="card-img" />
-              <div className="label">Logo Design</div>
-              <p className="desc">Distinctive marks and identity systems that stand out and scale across mediums.</p>
-            </div>
-          </a>
-          <a href="/graphicdesign" className="card-link">
-            <div className="card">
-              <img src="/images/parallax shirt 3.jpg" alt="Graphic Design" className="card-img" />
-              <div className="label">Graphic Design</div>
-              <p className="desc">Posters, layouts, and digital assets crafted for clarity, impact, and polish.</p>
-            </div>
-          </a>
-          <a href="/graphicdesign" className="card-link">
-            <div className="card">
-              <img src="/images/OPEN NETIZEN.jpg" alt="Branding" className="card-img" />
-              <div className="label">Branding</div>
-              <p className="desc">Strategy, tone, and a cohesive visual system that tells a consistent story.</p>
-            </div>
-          </a>
-        </section>
-
-
 
 <div>
         <a href="/websites" className="feature card feature-link">
@@ -125,12 +136,25 @@ export default function Homepage() {
 
 
 
-        <section ref={ctaRef} className={`cta-section ${ctaVisible ? 'cta-visible' : ''}`}>
-          <p className="cta-text">Have a project in mind?</p>
-          <a href="/contact" className="cta-btn">Contact</a>
-        </section>
+        
 
 
+      </div>
+      <div className="home-pane">
+        <div className="home-pane-content">
+          <section ref={ctaRef} className={`cta-section ${ctaVisible ? 'cta-visible' : ''}`}>
+            <p className="cta-text">Have a project in mind?</p>
+            <form ref={formRef} onSubmit={sendEmail} className="contact-form">
+              <input type="hidden" name="subject" value="CTA Inquiry" />
+              <div className="contact-form-row">
+                <input type="text" name="from_name" placeholder="Name" className="input" required />
+                <input type="email" name="user_email" placeholder="Email" className="input" required />
+              </div>
+              <textarea name="message" placeholder="Message" className="textarea" required />
+              <button type="submit" className="cta-btn" disabled={formStatus.isSubmitting}>Send</button>
+            </form>
+          </section>
+        </div>
       </div>
       <Footer />
     </div>

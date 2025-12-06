@@ -73,14 +73,16 @@ export default function Contact() {
             <p className="mono-text"><span className="bold">Medium:</span> E-mail</p>
             <p className="mono-text"><span className="bold">Date:</span> {currentDateTime}</p>
 
-            <form ref={form} onSubmit={sendEmail} className="contact-form">
-              <input type="text" name="from_name" required placeholder="Your Name" className="contact-input" />
-              <input type="email" name="user_email" required placeholder="Your Email" className="contact-input" />
-              <input type="text" name="subject" required placeholder="Subject" className="contact-input" />
-              <textarea name="message" required placeholder="Your Message" className="contact-input" rows="6"></textarea>
+              <form ref={form} onSubmit={sendEmail} className="contact-form">
+              <div className="contact-form-row">
+                <input type="text" name="from_name" required placeholder="Name" className="input" />
+                <input type="email" name="user_email" required placeholder="Email" className="input" />
+              </div>
+              <input type="hidden" name="subject" value="Contact Inquiry" />
+              <textarea name="message" required placeholder="Message" className="textarea" rows="4"></textarea>
 
-              <button type="submit" className="submit-button" disabled={status.isSubmitting}>
-                {status.isSubmitting ? <span className="loading-spinner"></span> : 'Send Message'}
+              <button type="submit" className="cta-btn" disabled={status.isSubmitting}>
+                {status.isSubmitting ? 'Sending…' : 'Send'}
               </button>
 
               {status.message && (
