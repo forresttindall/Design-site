@@ -28,7 +28,7 @@ export default function Nav() {
             <a href="/casestudies" className={`nav-link ${currentPath === '/casestudies' ? 'active' : ''}`}><span className="nav-link-text">Case Studies</span></a>
             <a href="/biography" className={`nav-link ${currentPath === '/biography' ? 'active' : ''}`}><span className="nav-link-text">Biography</span></a>
             <a href="/contact" className={`nav-link ${currentPath === '/contact' ? 'active' : ''}`}><span className="nav-link-text">Contact</span></a>
-            <a href="https://www.instagram.com/creationbase.io" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="nav-link"><InstagramLogo size={18} /></a>
+            <a href="https://www.instagram.com/forrest.creates" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="nav-link"><InstagramLogo size={18} /></a>
           </div>
         </div>
         <button
@@ -52,7 +52,7 @@ export default function Nav() {
           <a href="/casestudies" className="nav-link" onClick={() => setMenuOpen(false)}><span className="nav-link-text">Case Studies</span></a>
           <a href="/biography" className="nav-link" onClick={() => setMenuOpen(false)}><span className="nav-link-text">Biography</span></a>
           <a href="/contact" className="nav-link" onClick={() => setMenuOpen(false)}><span className="nav-link-text">Contact</span></a>
-          <a href="https://www.instagram.com/creationbase.io" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="nav-link" onClick={() => setMenuOpen(false)}><InstagramLogo size={18} /></a>
+          <a href="https://www.instagram.com/forrest.creates" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="nav-link" onClick={() => setMenuOpen(false)}><InstagramLogo size={18} /></a>
         </div>
       </div>
     </nav>
