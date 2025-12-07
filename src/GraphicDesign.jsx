@@ -32,6 +32,14 @@ export default function GraphicDesign() {
             <p className="mono-text"><span className="bold">Work:</span> Brand Identity Creation And Design</p>
           </section>
 
+          <section className='project card'>
+            <div className="featured-image">
+              <img src="/images/propagranda 3.png" alt="Featured artwork" />
+            </div>
+            <p className="mono-text"><span className="bold">Brand:</span> Boise Analog Club</p>
+            <p className="mono-text"><span className="bold">Work:</span> Poster design asset</p>
+          </section>
+
          
 
       <section className='project card'>
@@ -51,13 +59,6 @@ export default function GraphicDesign() {
           </section>
 
           
-            <section className='project card'>
-            <div className="featured-image">
-              <img src="/images/bac.png" alt="Featured artwork" />
-            </div>
-            <p className="mono-text"><span className="bold">Brand:</span> Boise Analog Club</p>
-            <p className="mono-text"><span className="bold">Work:</span> Brand Identity redesign and digital marketing assets</p>
-          </section>
 
 
           <section className='project card'>
@@ -66,6 +67,14 @@ export default function GraphicDesign() {
             </div>
             <p className="mono-text"><span className="bold">Brand:</span> Paradox Labs (Tech)</p>
             <p className="mono-text"><span className="bold">Work:</span> Brand Identity Creation And Design</p>
+          </section>
+
+          <section className='project card'>
+            <div className="featured-image">
+              <img src="/images/bac.png" alt="Featured artwork" />
+            </div>
+            <p className="mono-text"><span className="bold">Brand:</span> Boise Analog Club</p>
+            <p className="mono-text"><span className="bold">Work:</span> Brand Identity redesign and digital marketing assets</p>
           </section>
         </div>
       </div>

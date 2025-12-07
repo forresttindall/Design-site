@@ -45,6 +45,7 @@ export default function CaseStudies() {
             <img src="/images/analogflyer.png" alt="Club Meetup Flyer" />
             <img src="/images/bac.png" alt="Boise Analog Club Infographic" />
             <img src="/images/analogmockup.png" alt="Boise Analog Club Website Mockup" />
+            <img src="/images/propagranda 3.png" alt="Boise Analog Club Poster" />
           </div>
           <div className="case-points">
             <p className="case-text">Retro logo mark and visual system grounded in film heritage</p>
