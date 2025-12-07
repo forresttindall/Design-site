@@ -51,8 +51,13 @@ export default function Homepage() {
     const obs = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setCtaVisible(true)
+          const visible = entry.isIntersecting
+          setCtaVisible(visible)
+          if (window.location.pathname === '/') {
+            const targetHash = visible ? 'contact' : 'home'
+            if (window.location.hash !== `#${targetHash}`) {
+              window.location.hash = targetHash
+            }
           }
         })
       },
@@ -60,6 +65,17 @@ export default function Homepage() {
     )
     obs.observe(el)
     return () => obs.disconnect()
+  }, [])
+
+  useEffect(() => {
+    const scrollToContact = () => {
+      if (window.location.hash === '#contact' && ctaRef.current) {
+        ctaRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      }
+    }
+    scrollToContact()
+    window.addEventListener('hashchange', scrollToContact)
+    return () => window.removeEventListener('hashchange', scrollToContact)
   }, [])
 
   const sendEmail = (e) => {
@@ -142,7 +158,7 @@ export default function Homepage() {
       </div>
       <div className="home-pane">
         <div className="home-pane-content">
-          <section ref={ctaRef} className={`cta-section ${ctaVisible ? 'cta-visible' : ''}`}>
+          <section id="contact" ref={ctaRef} className={`cta-section ${ctaVisible ? 'cta-visible' : ''}`}>
             <p className="cta-text">Have a project in mind?</p>
             <form ref={formRef} onSubmit={sendEmail} className="contact-form">
               <input type="hidden" name="subject" value="CTA Inquiry" />

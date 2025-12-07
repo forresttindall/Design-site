@@ -4,11 +4,13 @@ import Homepage from './Homepage'
 import Biography from './Biography'
 import GraphicDesign from './GraphicDesign'
 import Websites from './Websites'
-import Contact from './Contact'
 import Photography from './Photography'
 import Testimonials from './Testimonials'
 import CaseStudies from './CaseStudies'
 
+if (window.location.pathname === '/contact') {
+  window.history.replaceState(null, '', '/#contact')
+}
 const path = window.location.pathname
 let Root
 if (path === '/biography') {
@@ -17,8 +19,6 @@ if (path === '/biography') {
   Root = <GraphicDesign />
 } else if (path === '/websites') {
   Root = <Websites />
-} else if (path === '/contact') {
-  Root = <Contact />
 } else if (path === '/photography') {
   Root = <Photography />
 } else if (path === '/testimonials') {
