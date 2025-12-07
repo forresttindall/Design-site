@@ -28,7 +28,7 @@ export default function Testimonials() {
                 </div>
                 <div className="review">
                   <h4>FIVE STARS!!!</h4>
-                  <p>I put off rebranding my business and building out a new website because I just didn't have the time or inclination to do it all myself. Working with Creationbase was easy and fun because they were able to draw information out of me that helped make the design and layout reflect my values. They also built elements into my website that gets it ranked higher in search engines and it gets noticed.</p>
+                  <p>I put off rebranding my business and building out a new website because I just didn't have the time or inclination to do it all myself. Working with Forrest was easy and fun because he was able to draw information out of me that helped make the design and layout reflect my values. He also built elements into my website that gets it ranked higher in search engines and it gets noticed.</p>
                 </div>
               </div>
             </div>
@@ -50,7 +50,7 @@ export default function Testimonials() {
                 </div>
                 <div className="review">
                   <h4>I couldn't be happier!</h4>
-                  <p>Creationbase did a fantastic job on my website. It's now ranking higher on Google and bringing in more business. They gave my site the professional look I always wanted!</p>
+                  <p>Forrest did a fantastic job on my website. It's now ranking higher on Google and bringing in more business. He gave my site the professional look I always wanted!</p>
                 </div>
               </div>
             </div>
@@ -74,7 +74,7 @@ export default function Testimonials() {
                 </div>
                 <div className="review">
                   <h4>Very pleased with the results!</h4>
-                  <p>Their quality and attention to detail is among the best. They built a website for my business partner that was clean, professional, and exceeded expectations.</p>
+                  <p>His quality and attention to detail is among the best. He built a website for my business partner that was clean, professional, and exceeded expectations.</p>
                 </div>
               </div>
             </div>
@@ -96,7 +96,7 @@ export default function Testimonials() {
                 </div>
                 <div className="review">
                   <h4>5 out of 5 stars!</h4>
-                  <p>I couldn't be happier with the rewards app Creationbase built for our carwash. It works seamlessly on both iOS and Android, and our customer engagement has increased significantly. They guided us through the entire process and backed up their recommendations with clear data and insights.</p>
+                  <p>I couldn't be happier with the rewards app Forrest built for our carwash. It works seamlessly on both iOS and Android, and our customer engagement has increased significantly. He guided us through the entire process and backed up his recommendations with clear data and insights.</p>
                 </div>
               </div>
             </div>
@@ -120,7 +120,7 @@ export default function Testimonials() {
                 </div>
                 <div className="review">
                   <h4>Absolutely Outstanding!</h4>
-                  <p>Creationbase transformed our outdated e-commerce platform into a modern, user-friendly experience. Our online sales have tripled since the launch, and customers constantly compliment how easy it is to navigate. Their team understood our vision perfectly and delivered beyond our expectations.</p>
+                  <p>Forrest transformed our outdated e-commerce platform into a modern, user-friendly experience. Our online sales have tripled since the launch, and customers constantly compliment how easy it is to navigate. He understood our vision perfectly and delivered beyond our expectations.</p>
                 </div>
               </div>
             </div>
@@ -142,7 +142,7 @@ export default function Testimonials() {
                 </div>
                 <div className="review">
                   <h4>Game changer for my business!</h4>
-                  <p>The mobile app Creationbase developed for my fitness studio has revolutionized how we connect with clients. Class bookings increased by 200%, and the integrated payment system makes everything seamless. Highly recommend their innovative approach!</p>
+                  <p>The mobile app Forrest developed for my fitness studio has revolutionized how we connect with clients. Class bookings increased by 200%, and the integrated payment system makes everything seamless. Highly recommend his innovative approach!</p>
                 </div>
               </div>
             </div>
