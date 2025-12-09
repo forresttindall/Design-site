@@ -17,7 +17,7 @@ export default function Homepage() {
 
   
   useEffect(() => {
-    const fullText = 'Your Creation Studio'
+    const fullText = 'Design | Web | Photo'
     let i = 0
     let active = true
     const type = () => {
@@ -103,7 +103,7 @@ export default function Homepage() {
         <Nav />
         <div className="home-pane-content">
           <section className={`hero ${loaded ? 'hero-loaded' : ''}`}>
-              <h1 className="name">Branding and web design built to be seen.</h1>
+              <h1 className="name">Branding and Web Design Built To Be Seen.</h1>
               <div className="sub">{typed}<span className="caret" /></div>
           </section>
 

@@ -67,8 +67,8 @@
 
 .input:focus, .textarea:focus {
   outline: none;
-  border-color: rgba(194, 255, 0, 0.6);
-  box-shadow: 0 0 0 1px rgba(194, 255, 0, 0.25);
+  border-color: rgba(237, 254, 0, 0.6);
+  box-shadow: 0 0 0 1px rgba(237, 254, 0, 0.25);
 }
 
 .contact-input::selection {
@@ -89,7 +89,7 @@
   font-weight: 700;
   letter-spacing: 0.8px;
   color: #111;
-  background: rgba(194, 255, 0, 0.70);
+  background: rgba(237, 254, 0, 0.70);
   backdrop-filter: blur(6px);
   border: none;
   border-radius: 9999px;
@@ -99,7 +99,7 @@
 
 .cta-btn:hover {
   transform: translateY(-1px) scale(1.03);
-  box-shadow: 0 0 6px rgba(194, 255, 0, 0.35), 0 0 12px rgba(194, 255, 0, 0.2);
+  box-shadow: 0 0 6px rgba(237, 254, 0, 0.35), 0 0 12px rgba(237, 254, 0, 0.2);
 }
 
 .loading-spinner {
@@ -124,12 +124,12 @@
 }
 
 .contact-content .project-link {
-  color: #C2FF00;
-  text-shadow: 0 0 4px rgba(194, 255, 0, 0.6), 0 0 8px rgba(194, 255, 0, 0.35);
+  color: #EDFE00;
+  text-shadow: 0 0 4px rgba(237, 254, 0, 0.6), 0 0 8px rgba(237, 254, 0, 0.35);
 }
 .contact-content .project-link:hover {
-  color: #C2FF00;
-  text-shadow: 0 0 6px rgba(194, 255, 0, 0.7), 0 0 12px rgba(194, 255, 0, 0.45);
+  color: #EDFE00;
+  text-shadow: 0 0 6px rgba(237, 254, 0, 0.7), 0 0 12px rgba(237, 254, 0, 0.45);
 }
 
 .contact-content .mono-text {

@@ -5,8 +5,10 @@
   --deep-purple: #8F12E9;
   --pink: #FF69B4;
   --cyan: #00FFFF;
-  --green: #00FF8C;
+  --green: #EDFE00;
   --yellow: #FFFF00;
+  --font-title: 'Space Grotesk', Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  --font-body: 'IBM Plex Mono', Geist mono, monospace;
 }
 
 @font-face {
@@ -50,7 +52,7 @@ html, body {
   height: 100%;
   width: 100%;
   background: #000;
-  font-family: Geist mono ,'PPNeueMachina', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.5;
   color: #c7c7c7;
@@ -88,20 +90,14 @@ main {
 
 
 
-/* Anchor glow removed and styles scoped to nav links in Nav.css */
 h1, h2 {
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  font-weight: 900;
-}
-h1, h2 {
-
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  font-weight: 900;
+  font-family: var(--font-title);
+  font-weight: 500;
   text-transform: uppercase;
 }
 
 body {
-  font-family: Geist mono, monospace;
+  font-family: var(--font-body);
   font-weight: 400;
   overflow-x: hidden;
 }
@@ -119,7 +115,7 @@ body {
 }
 
 .label {
-  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  font-family: var(--font-title);
   font-weight: 800;
   text-transform: uppercase;
 }

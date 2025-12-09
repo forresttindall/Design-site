@@ -6,6 +6,7 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [currentPath, setCurrentPath] = useState('/')
   const [hash, setHash] = useState('')
+  const [workOpen, setWorkOpen] = useState(false)
 
   useEffect(() => {
     const update = () => {
@@ -26,7 +27,7 @@ export default function Nav() {
       <div className="nav-container">
         <div className="nav-left">
           <a href="/" aria-label="Home" className="brand-link">
-            <img src="/images/fttypelogo.png" alt="Creationbase Logo" className="logo" />
+            <img src="/images/logo 2.png" alt="Creationbase Logo" className="logo" />
           
           </a>
         </div>
@@ -34,9 +35,24 @@ export default function Nav() {
           <div className="nav-right">
             <img src="/images/fttypelogo.png" alt="Creationbase Logo" className="logo-inline" />
             <a href="/" className={`nav-link ${currentPath === '/' && hash !== '#contact' ? 'active' : ''}`}><span className="nav-link-text">Home</span></a>
-            <a href="/websites" className={`nav-link ${currentPath === '/websites' ? 'active' : ''}`}><span className="nav-link-text">Websites</span></a>
-            <a href="/graphicdesign" className={`nav-link ${currentPath === '/graphicdesign' ? 'active' : ''}`}><span className="nav-link-text">Graphic Design</span></a>
-            <a href="/photography" className={`nav-link ${currentPath === '/photography' ? 'active' : ''}`}><span className="nav-link-text">Photography</span></a>
+            <div
+              className={`dropdown ${workOpen ? 'open' : ''}`}
+              onMouseEnter={() => setWorkOpen(true)}
+              onMouseLeave={() => setWorkOpen(false)}
+            >
+              <button
+                type="button"
+                className={`nav-link dropdown-trigger ${['/websites','/graphicdesign','/photography'].includes(currentPath) ? 'active' : ''}`}
+                onClick={() => setWorkOpen(o => !o)}
+              >
+                <span className="nav-link-text">Work</span>
+              </button>
+              <div className="dropdown-menu">
+                <a href="/websites" className={`nav-link ${currentPath === '/websites' ? 'active' : ''}`}><span className="nav-link-text">Websites</span></a>
+                <a href="/graphicdesign" className={`nav-link ${currentPath === '/graphicdesign' ? 'active' : ''}`}><span className="nav-link-text">Graphic Design</span></a>
+                <a href="/photography" className={`nav-link ${currentPath === '/photography' ? 'active' : ''}`}><span className="nav-link-text">Photography</span></a>
+              </div>
+            </div>
             <a href="/casestudies" className={`nav-link ${currentPath === '/casestudies' ? 'active' : ''}`}><span className="nav-link-text">Case Studies</span></a>
             <a href="/biography" className={`nav-link ${currentPath === '/biography' ? 'active' : ''}`}><span className="nav-link-text">Biography</span></a>
             <a href="/#contact" className={`nav-link ${currentPath === '/' && hash === '#contact' ? 'active' : ''}`}><span className="nav-link-text">Contact</span></a>
