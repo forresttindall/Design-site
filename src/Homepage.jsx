@@ -14,7 +14,7 @@ export default function Homepage() {
   const ctaRef = useRef(null)
   const formRef = useRef(null)
   const [formStatus, setFormStatus] = useState({ isSubmitting: false })
-  const websiteImages = ['/images/amore mockup.png', '/images/arrowleaf.png']
+  const websiteImages = ['/images/amore mockup.png', '/images/arrowleaf.png', '/images/new site.png']
   const [websiteIdx, setWebsiteIdx] = useState(0)
 
   
