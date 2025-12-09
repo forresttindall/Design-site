@@ -74,6 +74,20 @@
   font-size: 14px;
   line-height: 1;
 }
+.caret-icon {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-left: 3px;
+  flex-shrink: 0;
+}
+
+/* Ensure hover keeps menu open to prevent flicker */
+.dropdown:hover .dropdown-menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+}
 
 .dropdown-menu {
   position: absolute;

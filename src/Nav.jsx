@@ -46,6 +46,9 @@ export default function Nav() {
                 onClick={() => setWorkOpen(o => !o)}
               >
                 <span className="nav-link-text">Work</span>
+                <svg className="caret-icon" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 10l5 5 5-5" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
               </button>
               <div className="dropdown-menu">
                 <a href="/websites" className={`nav-link ${currentPath === '/websites' ? 'active' : ''}`}><span className="nav-link-text">Websites</span></a>
