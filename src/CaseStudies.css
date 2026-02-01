@@ -15,7 +15,7 @@
 
 .case-summary {
   font-size: 14px;
-  color: #9c9c9c;
+  color: #5a5a5a;
 }
 
 .case-section {
@@ -41,13 +41,14 @@
 .case-title {
   font-size: 20px;
   font-weight: 500;
+  font-family: var(--font-family);
   text-transform: uppercase;
   margin: 0 0 16px 0;
 }
 
 .case-text {
   font-size: 14px;
-  color: #c7c7c7;
+  color: #5a5a5a;
   margin: 6px 0;
 }
 .case-section .case-title + .case-text { margin-top: 0; }
@@ -60,22 +61,31 @@
   margin-top: 16px;
 }
 
-.case-media-grid img {
+.case-media-grid > img {
   break-inside: avoid;
-  margin-bottom: 16px;
   width: 100%;
   height: auto;
   display: block;
   border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+/* Consistent page title styling */
+.name {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: var(--font-family);
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .mockup-placeholder {
   display: grid;
   place-items: center;
   min-height: 220px;
-  color: #5a5a5a;
-  background: transparent;
-  border: 1px dashed #ccc;
+  color: #9c9c9c;
+  background: #0a0a0a;
+  border: 1px dashed #1a1a1a;
   border-radius: 8px;
 }
 

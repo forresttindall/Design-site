@@ -19,6 +19,21 @@ export default function Websites() {
             <p className="sites-desc">Web design and development focused on clean visuals, fast performance, and maintainable code. Responsive layouts, accessible UI, and modern tooling to ship quickly and scale.</p>
 
             <div className="sites-grid">
+             
+             
+               <section className='project card'>
+                <div className="featured-image">
+                  <img src="/images/ricochet mockup.png" alt="Amore" />
+                </div>
+                <p className="mono-text"><span className="bold">Brand:</span> Ricochet</p>
+                <p className="mono-text"><span className="bold">Description:</span> SAAS Company</p>
+                <p className="mono-text"><span className="bold">Work:</span> Design, and prototyping website</p>
+                 <p className="mono-text"><span className="bold">Team:</span> Superbase</p>
+                 <p className="mono-text"><span className="bold">Team Members:</span> Mickey Martin, Madi Cleave, Tyler Crab</p>
+              </section>
+             
+             
+             
               <section className='project card'>
                 <div className="featured-image">
                   <img src="/images/amore mockup.png" alt="Amore" />

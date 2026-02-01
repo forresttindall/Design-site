@@ -19,6 +19,23 @@ export default function GraphicDesign() {
             <p className="gd-desc">Logo design, graphic design, and branding. Identity systems, typography, layouts, and production-ready assets.</p>
 
             <div className="gd-grid">
+
+
+
+    <section className='project card'>
+                <div className="featured-image">
+                  <img src="/images/Hourly Sales.PNG" alt="Featured artwork" />
+                </div>
+                <p className="mono-text"><span className="bold">Brand:</span> Ricochet</p>
+                <p className="mono-text"><span className="bold">Work:</span> Asset Design</p>
+                <p className="mono-text"><span className="bold">Team:</span> Superbase</p>
+                <p className="mono-text"><span className="bold">Team Members:</span> Mickey Martin, Madi Cleave, Tyler Crab</p>
+              </section>
+
+
+         
+
+
               <section className='project card'>
                 <div className="featured-image">
                   <img src="/images/analogflyer.png" alt="Featured artwork" />
@@ -35,6 +52,21 @@ export default function GraphicDesign() {
                 <p className="mono-text"><span className="bold">Work:</span> Brand Identity Creation And Design</p>
               </section>
 
+ 
+      <section className='project card'>
+                <div className="featured-image">
+                  <img src="/images/Exportable tables.PNG" alt="Featured artwork" />
+                </div>
+                <p className="mono-text"><span className="bold">Brand:</span> Ricochet</p>
+                <p className="mono-text"><span className="bold">Work:</span> Asset Design</p>
+                <p className="mono-text"><span className="bold">Team:</span> Superbase</p>
+                <p className="mono-text"><span className="bold">Team Members:</span> Mickey Martin, Madi Cleave, Tyler Crab</p>
+              </section>
+
+
+   
+
+
               <section className='project card'>
                 <div className="featured-image">
                   <img src="/images/propagranda 3.png" alt="Featured artwork" />
@@ -42,6 +74,34 @@ export default function GraphicDesign() {
                 <p className="mono-text"><span className="bold">Brand:</span> Boise Analog Club</p>
                 <p className="mono-text"><span className="bold">Work:</span> Poster design asset</p>
               </section>
+
+                  <section className='project card'>
+                <div className="featured-image">
+                  <img src="/images/BAC FEBUARY.png" alt="Featured artwork" />
+                </div>
+                <p className="mono-text"><span className="bold">Brand:</span> Boise Analog Club</p>
+                <p className="mono-text"><span className="bold">Work:</span> Brand Identity redesign and digital marketing assets</p>
+              </section>
+
+
+
+   <section className='project card'>
+                <div className="featured-image">
+                  <img src="/images/launch art.png" alt="Featured artwork" />
+                </div>
+                <p className="mono-text"><span className="bold">Brand:</span> Creationbase</p>
+                <p className="mono-text"><span className="bold">Work:</span> Asset Design</p>
+              </section>
+
+   <section className='project card'>
+                <div className="featured-image">
+                  <img src="/images/westsidegun mockup 1.png" alt="Featured artwork" />
+                </div>
+                <p className="mono-text"><span className="bold">Brand:</span> Westside Gunn</p>
+                <p className="mono-text"><span className="bold">Work:</span> Album Art Design</p>
+              </section>
+
+
 
               <section className='project card'>
                 <div className="featured-image">
@@ -66,6 +126,16 @@ export default function GraphicDesign() {
                 <p className="mono-text"><span className="bold">Brand:</span> Paradox Labs (Tech)</p>
                 <p className="mono-text"><span className="bold">Work:</span> Brand Identity Creation And Design</p>
               </section>
+
+                 <section className='project card'>
+                <div className="featured-image">
+                  <img src="/images/conway the machine 1 mockup.png" alt="Featured artwork" />
+                </div>
+                <p className="mono-text"><span className="bold">Brand:</span> Conway The Machine</p>
+                <p className="mono-text"><span className="bold">Work:</span> Album Art Design</p>
+              </section>
+
+
 
               <section className='project card'>
                 <div className="featured-image">
