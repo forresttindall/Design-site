@@ -10,8 +10,8 @@ export default function GraphicDesign() {
   }, [])
 
   return (
-    <div className="homepage graphic-design-page">
-      <div className="home-pane">
+    <div className="homepage homepage-no-offset graphic-design-page">
+      <div className="home-pane graphic-design-pane">
         <Nav />
         <div className="home-pane-content">
           <div className="homepage-container">

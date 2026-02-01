@@ -37,6 +37,27 @@
   margin-bottom: 24px;
 }
 
+.graphic-design-pane {
+  padding-top: 80px;
+  padding-bottom: 0px;
+  margin-bottom: 0;
+  border: 0;
+}
+
+.graphic-design-pane .gd-grid {
+  margin-bottom: 10px;
+}
+
+.graphic-design-page .homepage-container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Match Websites pane border/visuals */
+.graphic-design-page .home-pane {
+  border: 1px solid rgba(0,0,0,0.12);
+}
+
 @media (max-width: 1200px) {
   .gd-grid { columns: 2 320px; }
 }
@@ -45,6 +66,10 @@
   .gd-grid { columns: 1 100%; column-gap: 12px; margin-bottom: 0; }
   .gd-grid .project { margin-bottom: 12px; }
   .name { font-size: 28px; }
+  
+  .graphic-design-pane {
+    padding-top: 20px;
+  }
   
   .graphic-design-page .homepage-container {
     padding-left: 0;
@@ -56,6 +81,6 @@
   font-size: 32px;
   font-weight: 500;
   font-family: var(--font-family);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   margin-top: 20px;
 }
