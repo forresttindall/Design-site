@@ -33,15 +33,6 @@ export default function Websites() {
               </section>
              
              
-             
-              <section className='project card'>
-                <div className="featured-image">
-                  <img src="/images/amore mockup.png" alt="Amore" />
-                </div>
-                <p className="mono-text"><span className="bold">Brand:</span> Amore</p>
-                <p className="mono-text"><span className="bold">Description:</span> Boise Restaurant</p>
-                <p className="mono-text"><span className="bold">Work:</span> Design, prototyping and development of the website</p>
-              </section>
 
               <section className='project card dev-card'>
                 <div className="badge">Web Development</div>
@@ -54,6 +45,21 @@ export default function Websites() {
                 </ul>
               </section>
 
+
+
+
+             
+              <section className='project card'>
+                <div className="featured-image">
+                  <img src="/images/amore mockup.png" alt="Amore" />
+                </div>
+                <p className="mono-text"><span className="bold">Brand:</span> Amore</p>
+                <p className="mono-text"><span className="bold">Description:</span> Boise Restaurant</p>
+                <p className="mono-text"><span className="bold">Work:</span> Design, prototyping and development of the website</p>
+              </section>
+
+
+              
               <section className='project card'>
                 <div className="featured-image">
                   <img src="/images/clearfeed.png" alt="Clearfeed" />
