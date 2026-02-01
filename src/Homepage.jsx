@@ -19,7 +19,7 @@ export default function Homepage() {
 
   
   useEffect(() => {
-    const fullText = 'Freelance Designer Helping Brands Stand Out'
+    const fullText = 'Designer Helping Brands Stand Out'
     let i = 0
     let active = true
     const type = () => {
