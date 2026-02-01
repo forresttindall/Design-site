@@ -24,6 +24,15 @@
   .photos-grid { columns: 2 280px; }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .photos-grid { columns: 1 100%; }
+  
+  .photos-container {
+    padding: 0;
+  }
+  
+  .photography-page .homepage-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

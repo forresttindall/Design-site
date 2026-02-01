@@ -10,7 +10,7 @@ export default function GraphicDesign() {
   }, [])
 
   return (
-    <div className="homepage">
+    <div className="homepage graphic-design-page">
       <div className="home-pane">
         <Nav />
         <div className="home-pane-content">

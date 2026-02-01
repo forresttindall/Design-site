@@ -221,7 +221,7 @@
 .mobile-menu {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.96);
+  background: rgba(242, 242, 242, 0.98);
   opacity: 0;
   pointer-events: none;
   transition: opacity 220ms ease;
@@ -247,7 +247,7 @@
 .mobile-menu .nav-link {
   font-size: 24px;
   text-align: center;
-  color: #c7c7c7;
+  color: #1a1a1a;
 }
 
 .mobile-menu .nav-link::after {
@@ -272,7 +272,7 @@
   left: 5px;
   right: 5px;
   height: 2px;
-  background: #c7c7c7;
+  background: #1a1a1a;
 }
 
 .menu-close .bar-top { top: 14px; transform: rotate(45deg); }

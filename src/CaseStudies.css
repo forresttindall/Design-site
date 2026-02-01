@@ -98,7 +98,13 @@
   .case-hero.card { padding: 16px; }
   .case-split { grid-template-columns: 1fr; }
   .case-hero { margin-bottom: 16px; }
-  .case-section { margin-bottom: 16px; }
-  .case-split { margin-bottom: 16px; }
-  .case-media-grid { gap: 16px; margin-top: 16px; }
+  
+  .case-studies-page .homepage-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .case-section:last-child {
+    margin-bottom: 0;
+  }
 }

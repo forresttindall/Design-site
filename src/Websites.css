@@ -76,9 +76,22 @@
 }
 
 @media (max-width: 768px) {
-  .sites-grid { gap: 12px; margin-bottom: 60px; }
+  .sites-grid { gap: 12px; margin-bottom: 0; }
   .name { font-size: 28px; }
   .sites-pane-grid { grid-template-columns: 1fr; }
+  
+  .websites-pane {
+    padding-top: 20px;
+  }
+  
+  .websites-page .homepage-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .sites-grid .project {
+    margin-top: 16px;
+  }
 }
 
 /* No responsive column changes needed; cards are full width */

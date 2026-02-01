@@ -10,7 +10,7 @@ export default function Photography() {
   }, [])
 
   return (
-    <div className="homepage">
+    <div className="homepage photography-page">
       <div className="home-pane">
         <Nav />
         <div className="home-pane-content">

@@ -8,7 +8,7 @@ export default function CaseStudies() {
   useEffect(() => { window.scrollTo(0, 0) }, [])
 
   return (
-    <div className="homepage">
+    <div className="homepage case-studies-page">
       <div className="home-pane">
         <Nav />
         <div className="home-pane-content">
