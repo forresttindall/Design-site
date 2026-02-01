@@ -85,13 +85,7 @@ export default function GraphicDesign() {
 
 
 
-   <section className='project card'>
-                <div className="featured-image">
-                  <img src="/images/launch art.png" alt="Featured artwork" />
-                </div>
-                <p className="mono-text"><span className="bold">Brand:</span> Creationbase</p>
-                <p className="mono-text"><span className="bold">Work:</span> Asset Design</p>
-              </section>
+ 
 
    <section className='project card'>
                 <div className="featured-image">
@@ -101,7 +95,13 @@ export default function GraphicDesign() {
                 <p className="mono-text"><span className="bold">Work:</span> Album Art Design</p>
               </section>
 
-
+  <section className='project card'>
+                <div className="featured-image">
+                  <img src="/images/launch art.png" alt="Featured artwork" />
+                </div>
+                <p className="mono-text"><span className="bold">Brand:</span> Creationbase</p>
+                <p className="mono-text"><span className="bold">Work:</span> Asset Design</p>
+              </section>
 
               <section className='project card'>
                 <div className="featured-image">
@@ -125,6 +125,14 @@ export default function GraphicDesign() {
                 </div>
                 <p className="mono-text"><span className="bold">Brand:</span> Paradox Labs (Tech)</p>
                 <p className="mono-text"><span className="bold">Work:</span> Brand Identity Creation And Design</p>
+              </section>
+
+                <section className='project card'>
+                <div className="featured-image">
+                  <img src="/images/beer-3.jpg" alt="Featured artwork" />
+                </div>
+                <p className="mono-text"><span className="bold">Brand:</span> Moab Brewery</p>
+                <p className="mono-text"><span className="bold">Work:</span> illustration and Design</p>
               </section>
 
                  <section className='project card'>
