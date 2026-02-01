@@ -73,9 +73,9 @@
   display: grid;
   place-items: center;
   min-height: 220px;
-  color: #9c9c9c;
-  background: #0a0a0a;
-  border: 1px dashed #1a1a1a;
+  color: #5a5a5a;
+  background: transparent;
+  border: 1px dashed #ccc;
   border-radius: 8px;
 }
 

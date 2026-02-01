@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Nav from './Nav'
 import Footer from './Footer.jsx'
 import './GraphicDesign.css'
+import './Homepage.css'
 
 export default function GraphicDesign() {
   useEffect(() => {
@@ -10,72 +11,71 @@ export default function GraphicDesign() {
 
   return (
     <div className="homepage">
-      <Nav />
-      <div className="homepage-container">
-        <h1 className="name">Graphic Design</h1>
-        <p className="gd-desc">Logo design, graphic design, and branding. Identity systems, typography, layouts, and production-ready assets.</p>
+      <div className="home-pane">
+        <Nav />
+        <div className="home-pane-content">
+          <div className="homepage-container">
+            <h1 className="name">Graphic Design</h1>
+            <p className="gd-desc">Logo design, graphic design, and branding. Identity systems, typography, layouts, and production-ready assets.</p>
 
-        <div className="gd-grid">
-          <section className='project card'>
-            <div className="featured-image">
-              <img src="/images/analogflyer.png" alt="Featured artwork" />
+            <div className="gd-grid">
+              <section className='project card'>
+                <div className="featured-image">
+                  <img src="/images/analogflyer.png" alt="Featured artwork" />
+                </div>
+                <p className="mono-text"><span className="bold">Brand:</span> Boise Analog Club</p>
+                <p className="mono-text"><span className="bold">Work:</span> Brand Identity redesign and digital marketing assets</p>
+              </section>
+
+              <section className='project card'>
+                <div className="featured-image">
+                  <img src="/images/LRK.jpg" alt="Featured artwork" />
+                </div>
+                <p className="mono-text"><span className="bold">Brand:</span> Lost River Knives</p>
+                <p className="mono-text"><span className="bold">Work:</span> Brand Identity Creation And Design</p>
+              </section>
+
+              <section className='project card'>
+                <div className="featured-image">
+                  <img src="/images/propagranda 3.png" alt="Featured artwork" />
+                </div>
+                <p className="mono-text"><span className="bold">Brand:</span> Boise Analog Club</p>
+                <p className="mono-text"><span className="bold">Work:</span> Poster design asset</p>
+              </section>
+
+              <section className='project card'>
+                <div className="featured-image">
+                  <img src="/images/parallax shirt 3.jpg" alt="Parallax Zine" />
+                </div>
+                <p className="mono-text"><span className="bold">Brand:</span> Parallax Zine (Film Photography Zine)</p>
+                <p className="mono-text"><span className="bold">Work:</span> Brand Identity Creation And Design</p>
+              </section>
+
+              <section className='project card'>
+                <div className="featured-image">
+                  <img src="/images/OPEN NETIZEN.jpg" alt="Featured artwork" />
+                </div>
+                <p className="mono-text"><span className="bold">Brand:</span> Open Netizen (non-profit organization)</p>
+                <p className="mono-text"><span className="bold">Work:</span> Brand Identity Creation And Design</p>
+              </section>
+
+              <section className='project card'>
+                <div className="featured-image">
+                  <img src="/images/paradoxlabscard.jpg" alt="Featured artwork" />
+                </div>
+                <p className="mono-text"><span className="bold">Brand:</span> Paradox Labs (Tech)</p>
+                <p className="mono-text"><span className="bold">Work:</span> Brand Identity Creation And Design</p>
+              </section>
+
+              <section className='project card'>
+                <div className="featured-image">
+                  <img src="/images/bac.png" alt="Featured artwork" />
+                </div>
+                <p className="mono-text"><span className="bold">Brand:</span> Boise Analog Club</p>
+                <p className="mono-text"><span className="bold">Work:</span> Brand Identity redesign and digital marketing assets</p>
+              </section>
             </div>
-            <p className="mono-text"><span className="bold">Brand:</span> Boise Analog Club</p>
-            <p className="mono-text"><span className="bold">Work:</span> Brand Identity redesign and digital marketing assets</p>
-          </section>
-
-          <section className='project card'>
-            <div className="featured-image">
-              <img src="/images/LRK.jpg" alt="Featured artwork" />
-            </div>
-            <p className="mono-text"><span className="bold">Brand:</span> Lost River Knives</p>
-            <p className="mono-text"><span className="bold">Work:</span> Brand Identity Creation And Design</p>
-          </section>
-
-          <section className='project card'>
-            <div className="featured-image">
-              <img src="/images/propagranda 3.png" alt="Featured artwork" />
-            </div>
-            <p className="mono-text"><span className="bold">Brand:</span> Boise Analog Club</p>
-            <p className="mono-text"><span className="bold">Work:</span> Poster design asset</p>
-          </section>
-
-         
-
-      <section className='project card'>
-            <div className="featured-image">
-              <img src="/images/parallax shirt 3.jpg" alt="Parallax Zine" />
-            </div>
-            <p className="mono-text"><span className="bold">Brand:</span> Parallax Zine (Film Photography Zine)</p>
-            <p className="mono-text"><span className="bold">Work:</span> Brand Identity Creation And Design</p>
-          </section>
-
-          <section className='project card'>
-            <div className="featured-image">
-              <img src="/images/OPEN NETIZEN.jpg" alt="Featured artwork" />
-            </div>
-            <p className="mono-text"><span className="bold">Brand:</span> Open Netizen (non-profit organization)</p>
-            <p className="mono-text"><span className="bold">Work:</span> Brand Identity Creation And Design</p>
-          </section>
-
-          
-
-
-          <section className='project card'>
-            <div className="featured-image">
-              <img src="/images/paradoxlabscard.jpg" alt="Featured artwork" />
-            </div>
-            <p className="mono-text"><span className="bold">Brand:</span> Paradox Labs (Tech)</p>
-            <p className="mono-text"><span className="bold">Work:</span> Brand Identity Creation And Design</p>
-          </section>
-
-          <section className='project card'>
-            <div className="featured-image">
-              <img src="/images/bac.png" alt="Featured artwork" />
-            </div>
-            <p className="mono-text"><span className="bold">Brand:</span> Boise Analog Club</p>
-            <p className="mono-text"><span className="bold">Work:</span> Brand Identity redesign and digital marketing assets</p>
-          </section>
+          </div>
         </div>
       </div>
       <Footer />

@@ -7,8 +7,8 @@
   --cyan: #00FFFF;
   --green: #EDFE00;
   --yellow: #FFFF00;
-  --font-title: 'Space Grotesk', Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-  --font-body: 'IBM Plex Mono', Geist mono, monospace;
+  --font-title: 'jetbrains mono', Geist mono, monospace;
+  --font-body: 'geist mono', Geist mono, monospace;
 }
 
 @font-face {
@@ -51,24 +51,24 @@
 html, body {
   height: 100%;
   width: 100%;
-  background: #000;
+  background-color: #f2f2f2;
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 1.5;
-  color: #c7c7c7;
+  color: #1a1a1a;
 }
 
 main {
   width: 100%;
-  max-width: 900px;
+  
   margin: 0 auto;
-  padding: 2rem;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: rgba(30, 0, 60, 0.4);
+    background-color: #f2f2f2;
   border-radius: 12px;
   box-shadow: 0 0 40px rgba(147, 112, 219, 0.5);
   backdrop-filter: blur(4px);

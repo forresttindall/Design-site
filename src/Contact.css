@@ -50,11 +50,11 @@
 .input, .textarea {
   width: 100%;
   padding: 8px 10px;
-  color: #dedede;
+  color: #1a1a1a;
   background: transparent;
-  border: 1px solid rgba(255,255,255,0.18);
+  border: 1px solid rgba(0,0,0,0.18);
   border-radius: 10px;
-  caret-color: #ffffff;
+  caret-color: #1a1a1a;
   font-size: 12px;
   font-family: Geist mono, monospace;
 }

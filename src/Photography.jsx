@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Nav from './Nav'
 import Footer from './Footer'
 import './Photography.css'
+import './Homepage.css'
 
 export default function Photography() {
   useEffect(() => {
@@ -10,11 +11,14 @@ export default function Photography() {
 
   return (
     <div className="homepage">
-      <Nav />
-      <div className="photos-container">
-        <div className="photos-grid">
-          <img src="/images/gasstation.jpg" alt="IMG_2272-2" loading="lazy" />
-          <img src="/images/IMG_2272-2.jpg" alt="IMG_2272-2" loading="lazy" />
+      <div className="home-pane">
+        <Nav />
+        <div className="home-pane-content">
+          <div className="homepage-container">
+            <div className="photos-container">
+              <div className="photos-grid">
+                <img src="/images/gasstation.jpg" alt="IMG_2272-2" loading="lazy" />
+                <img src="/images/IMG_2272-2.jpg" alt="IMG_2272-2" loading="lazy" />
        
           <img src="/images/_DSC1226-2.jpg" alt="_DSC1226-2" loading="lazy" />
           <img src="/images/_DSC1375-2.jpg" alt="_DSC1375-2" loading="lazy" />
@@ -37,6 +41,9 @@ export default function Photography() {
           <img src="/images/_DSC8589.jpg" alt="_DSC8589" loading="lazy" />
           <img src="/images/_DSC9069-2.jpg" alt="_DSC9069-2" loading="lazy" />
           <img src="/images/_DSC9182.jpg" alt="_DSC9182" loading="lazy" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <Footer />

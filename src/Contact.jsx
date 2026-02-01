@@ -1,9 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react'
 import emailjs from '@emailjs/browser'
 import './Contact.css'
+import './Homepage.css'
 import { blastConfetti } from './confetti'
 import Nav from './Nav'
-import Footer from './Footer'
+import Footer from './Footer.jsx'
 
 export default function Contact() {
   const form = useRef()
@@ -63,41 +64,45 @@ export default function Contact() {
 
   return (
     <div className="homepage contact-page">
-      <Nav />
-      <div className="homepage-container">
-        <div className="contact-section" ref={vantaRef}>
-          <div className="contact-content">
-            <h1>Contact</h1>
+      <div className="home-pane">
+        <Nav />
+        <div className="home-pane-content">
+          <div className="homepage-container">
+            <div className="contact-section" ref={vantaRef}>
+              <div className="contact-content">
+                <h1>Contact</h1>
 
-            <p className="mono-text"><span className="bold">Description:</span> Contact Forrest Tindall about projects or work.</p>
-            <p className="mono-text"><span className="bold">Medium:</span> E-mail</p>
-            <p className="mono-text"><span className="bold">Date:</span> {currentDateTime}</p>
+                <p className="mono-text"><span className="bold">Description:</span> Contact Forrest Tindall about projects or work.</p>
+                <p className="mono-text"><span className="bold">Medium:</span> E-mail</p>
+                <p className="mono-text"><span className="bold">Date:</span> {currentDateTime}</p>
 
-              <form ref={form} onSubmit={sendEmail} className="contact-form">
-              <div className="contact-form-row">
-                <input type="text" name="from_name" required placeholder="Name" className="input" />
-                <input type="email" name="user_email" required placeholder="Email" className="input" />
+                <form ref={form} onSubmit={sendEmail} className="contact-form">
+                  <div className="contact-form-row">
+                    <input type="text" name="from_name" required placeholder="Name" className="input" />
+                    <input type="email" name="user_email" required placeholder="Email" className="input" />
+                  </div>
+                  <input type="hidden" name="subject" value="Contact Inquiry" />
+                  <textarea name="message" required placeholder="Message" className="textarea" rows="4"></textarea>
+
+                  <button type="submit" className="cta-btn" disabled={status.isSubmitting}>
+                    {status.isSubmitting ? 'Sending…' : 'Send'}
+                  </button>
+
+                  {status.message && (
+                    <div className={`status-message ${status.isError ? 'error' : 'success'}`}>
+                      {status.message}
+                    </div>
+                  )}
+                </form>
+
+                <h1>Follow</h1>
+                <p className="mono-text"><span className="bold">Description:</span> Follow Forrest Tindall on social.</p>
+                <p className="mono-text"><span className="bold">Medium:</span> World Wide Web</p>
+                <p className="mono-text"><span className="bold">Instagram:</span> <a className="project-link" href="https://www.instagram.com/forrest.tindall/" target="_blank">Instagram</a></p>
+                <p className="mono-text"><span className="bold">Threads:</span> <a className="project-link" href="https://www.threads.net/@forrest.tindall" target="_blank">Threads</a></p>
+                <p className="mono-text"><span className="bold">Bluesky:</span> <a className="project-link" href="https://bsky.app/profile/forresttindall.com" target="_blank">Bluesky</a></p>
               </div>
-              <input type="hidden" name="subject" value="Contact Inquiry" />
-              <textarea name="message" required placeholder="Message" className="textarea" rows="4"></textarea>
-
-              <button type="submit" className="cta-btn" disabled={status.isSubmitting}>
-                {status.isSubmitting ? 'Sending…' : 'Send'}
-              </button>
-
-              {status.message && (
-                <div className={`status-message ${status.isError ? 'error' : 'success'}`}>
-                  {status.message}
-                </div>
-              )}
-            </form>
-
-            <h1>Follow</h1>
-            <p className="mono-text"><span className="bold">Description:</span> Follow Forrest Tindall on social.</p>
-            <p className="mono-text"><span className="bold">Medium:</span> World Wide Web</p>
-            <p className="mono-text"><span className="bold">Instagram:</span> <a className="project-link" href="https://www.instagram.com/forrest.tindall/" target="_blank">Instagram</a></p>
-            <p className="mono-text"><span className="bold">Threads:</span> <a className="project-link" href="https://www.threads.net/@forrest.tindall" target="_blank">Threads</a></p>
-            <p className="mono-text"><span className="bold">Bluesky:</span> <a className="project-link" href="https://bsky.app/profile/forresttindall.com" target="_blank">Bluesky</a></p>
+            </div>
           </div>
         </div>
       </div>

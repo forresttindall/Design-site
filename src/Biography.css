@@ -35,7 +35,7 @@
   object-fit: cover;
   display: block;
   border-radius: 32px;
-  border: 1px solid rgba(255,255,255,0.12);
+  border: 1px solid rgba(0,0,0,0.12);
   margin-bottom: 40px;
   margin-top: 40px;
 }
@@ -46,7 +46,7 @@
   object-fit: cover;
   display: block;
   border-radius: 16px;
-  border: 1px solid rgba(255,255,255,0.12);
+  border: 1px solid rgba(0,0,0,0.12);
   margin-bottom: 40px;
   margin-top: 40px;
 }
@@ -70,7 +70,7 @@
 
 .bio-text {
   font-size: 14px;
-  color: #9c9c9c;
+  color: black;
   margin-bottom: 16px;
 }
 

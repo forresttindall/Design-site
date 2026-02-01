@@ -27,7 +27,7 @@ export default function Nav() {
       <div className="nav-container">
         <div className="nav-left">
           <a href="/" aria-label="Home" className="brand-link">
-            <img src="/images/logo 2.png" alt="Creationbase Logo" className="logo" />
+            <img src="/images/logo.png" alt="Creationbase Logo" className="logo" />
           
           </a>
         </div>
